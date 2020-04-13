@@ -40,7 +40,7 @@ function App() {
                     "http://maternalrayuela.com/pascuas/huevo" + index + ".jpg"
                   }
                   onClick={() => {
-                    handleEggClick(index);
+                    !animate && handleEggClick(index);
                   }}
                   style={animate ? styles.fadeOutDown : undefined}
                 />
